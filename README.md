@@ -1,4 +1,4 @@
 # EndoControlMag Page
 
 
--  [https://szupc.github.io/EndoControlMag/](https://szupc.github.io/EndoControlMag/)
+-  [https://cho-haz.github.io/EndoControlMag/](https://cho-haz.github.io/EndoControlMag/)
