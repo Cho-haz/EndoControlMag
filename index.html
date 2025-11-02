@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>EndoControlMag: Robust Endoscopic Vascular Motion Magnification with Periodic Reference Resetting and Hierarchical Tissue-aware Dual-Mask Control</title>
+  <link rel="icon" type="image/x-icon" href="static/images/myfavicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+     <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                EndoControlMag: Robust Endoscopic Vascular Motion Magnification with Periodic Reference Resetting and Hierarchical Tissue-aware Dual-Mask Control
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">An Wang<sup>*</sup>,</span>
+                <span class="author-block">Rulin Zhou<sup>*</sup>,</span>
+                <span class="author-block">Mengya Xu<sup>*</sup>,</span>
+                <span class="author-block">Yiru Ye,</span>
+                <span class="author-block">Longfei Gou,</span>
+                <span class="author-block">Yiting Chang,</span>
+                <span class="author-block">Hao Chen,</span>
+                <span class="author-block">Chwee Ming Lim,</span>
+                <span class="author-block">Jiankun Wang,</span>
+                <span class="author-block">Hongliang Ren<sup>†</sup></span>
+              </div>
+    
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  The Chinese University of Hong Kong; CUHK Shenzhen Research Institute<br>
+                  The First Affiliated Hospital of Wenzhou Medical University<br>
+                  Nanfang Hospital, Southern Medical University<br>
+                  Singapore General Hospital, Duke-NUS Medical School<br>
+                  Southern University of Science and Technology
+                </span>
+                <span class="eql-cntrb">
+                  <small><br><sup>*</sup>Equal Contribution</small>
+                </span>
+                <span class="eql-cntrb">
+                  <small><sup>†</sup>Corresponding Author</small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- 
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                    </span>
+                    -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="SzuPc/EndoControlMag.github.io/static/工具移动牵拉组织_x8_update_4_track_math.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Visualizing subtle vascular motions in endoscopic robotic surgery is crucial for surgical precision and decision-making, yet remains challenging due to the complex and dynamic nature of surgical scenes. To address this, we introduce <em>EndoControlMag</em>, a training-free, Lagrangian-based framework with mask-conditioned vascular motion magnification tailored to endoscopic environments. Our approach features two key modules: a <em>Periodic Reference Resetting (PRR)</em> scheme that divides videos into short overlapping clips with dynamically updated reference frames to prevent error accumulation while maintaining temporal coherence, and a <em>Hierarchical Tissue-aware Magnification (HTM)</em> framework with dual-mode mask dilation. HTM first tracks vessel cores using a pretrained visual tracking model to maintain accurate localization despite occlusions and view changes. It then applies one of two adaptive softening strategies to surrounding tissues: motion-based softening that modulates magnification strength proportional to observed tissue displacement, or distance-based exponential decay that simulates biomechanical force attenuation. This dual-mode approach accommodates diverse surgical scenarios—motion-based softening excels with complex tissue deformations while distance-based softening provides stability during unreliable optical flow conditions.
+            We evaluate EndoControlMag on our <em>EndoVMM24</em> dataset spanning four different surgery types and various challenging scenarios, including instrument occlusions, view changes, and vessel deformations.
+            Quantitative metrics, visual assessments, and expert surgeon evaluations demonstrate that EndoControlMag significantly outperforms existing methods in both magnification accuracy and visual quality while maintaining robustness across challenging surgical conditions.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Graphical Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered">
+        <h2 class="title is-3">Graphical Abstract</h2>
+        <div class="content">
+          <img src="static/images/Graphical_abstract.png" alt="Graphical abstract of our EndoControlMag." style="max-width: 80%; height: auto; margin: auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Graphical Abstract -->
+
+<!-- Image carousel -->
+ <!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- End youtube video -->
+
+
+
+<!-- Video section -->
+<style>
+  /* 强制视频大小一致 */
+  .video-container video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* 确保视频内容适应宽高 */
+    margin: 0 auto;
+  }
+
+  /* 确保文字与视频居中对齐 */
+  .video-container h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+</style>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- 添加标题 -->
+      <h1 class="title is-2 has-text-centered">Compare in Easy Cases</h1>
+      <!-- 添加小字描述 -->
+      <p class="subtitle is-5 has-text-centered">
+          Comparison of the amplification effects of different models on the Easy Case dataset
+      </p>
+      <div style="height: 10px;"></div> <!-- 添加一个空白的 div 来增加间距 -->            
+      <h2 class="title is-3 has-text-centered">Laparoscopic Cholecystectomy (LC)</h2>
+      <!-- Row 1: 3 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video0" autoplay muted loop>
+            <source src="github_video/original/Cho_正常.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video1" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag_ours/Cholecystotomy/正常_x4_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO2_POSTER" id="video2" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag/Cholecystotomy/正常_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO3_POSTER" id="video3" autoplay muted loop>
+            <source src="github_video/easy_case/Axial-mm/Cholecystotomy/正常_magxy_4_4_theta45_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Axial-VMM</h3>
+        </div>
+      </div>
+      <!-- Row 2: 4 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO4_POSTER" id="video4" autoplay muted loop>
+            <source src="github_video/easy_case/Multi_Domain_Learning/Cholecystotomy/正常_x8_mag_D1_img.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">MDL-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO5_POSTER" id="video5" autoplay muted loop>
+            <source src="github_video/easy_case/motion_magnification/Cholecystotomy/正常_x4_mag_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">DMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO6_POSTER" id="video6" autoplay muted loop>
+            <source src="github_video/easy_case/STB_VMM/Cholecystotomy/正常_x4_x4_static_output.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">STB-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO7_POSTER" id="video7" autoplay muted loop>
+            <source src="github_video/easy_case/EVM/Cholecystotomy/正常_x4_mag_EVM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EVM</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</style>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Laparoscopic Distal Gastrectomy (LDG)</h2>
+      <!-- Row 1: 3 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video0" autoplay muted loop>
+            <source src="github_video/original/Dis_正常.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video1" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag_ours/Distal_Gastrectomy/正常_x4_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO2_POSTER" id="video2" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag/Distal_Gastrectomy/正常_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO3_POSTER" id="video3" autoplay muted loop>
+            <source src="github_video/easy_case/Axial-mm/Distal_Gastrectomy/正常_magxy_4_4_theta45_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Axial-VMM</h3>
+        </div>
+      </div>
+      <!-- Row 2: 4 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO4_POSTER" id="video4" autoplay muted loop>
+            <source src="github_video/easy_case/Multi_Domain_Learning/Distal_Gastrectomy/正常_x8_mag_D1_img.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">MDL-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO5_POSTER" id="video5" autoplay muted loop>
+            <source src="github_video/easy_case/motion_magnification/Distal_Gastrectomy/正常_x4_mag_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">DMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO6_POSTER" id="video6" autoplay muted loop>
+            <source src="github_video/easy_case/STB_VMM/Distal_Gastrectomy/正常_x4_x4_static_output.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">STB-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO7_POSTER" id="video7" autoplay muted loop>
+            <source src="github_video/easy_case/EVM/Distal_Gastrectomy/正常_x4_mag_EVM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EVM</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</style>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Laparoscopic Roux-en-Y Gastric Bypass (LRYGB)</h2>
+      <!-- Row 1: 3 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video0" autoplay muted loop>
+            <source src="github_video/original/Gas_正常.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video1" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag_ours/Gastrectomy/正常_x4_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO2_POSTER" id="video2" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag/Gastrectomy/正常_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO3_POSTER" id="video3" autoplay muted loop>
+            <source src="github_video/easy_case/Axial-mm/Gastrectomy/正常_magxy_4_4_theta45_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Axial-VMM</h3>
+        </div>
+      </div>
+      <!-- Row 2: 4 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO4_POSTER" id="video4" autoplay muted loop>
+            <source src="github_video/easy_case/Multi_Domain_Learning/Gastrectomy/正常_x8_mag_D1_img.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">MDL-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO5_POSTER" id="video5" autoplay muted loop>
+            <source src="github_video/easy_case/motion_magnification/Gastrectomy/正常_x4_mag_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">DMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO6_POSTER" id="video6" autoplay muted loop>
+            <source src="github_video/easy_case/STB_VMM/Gastrectomy/正常_x4_x4_static_output.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">STB-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO7_POSTER" id="video7" autoplay muted loop>
+            <source src="github_video/easy_case/EVM/Gastrectomy/正常_x4_mag_EVM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EVM</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</style>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Robot-assisted Radical Prostatectomy (RARP)</h2>
+      <!-- Row 1: 3 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video0" autoplay muted loop>
+            <source src="github_video/original/Pro_正常.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video1" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag_ours/Prostatectomy/正常_x4_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO2_POSTER" id="video2" autoplay muted loop>
+            <source src="github_video/easy_case/flowmag/Prostatectomy/正常_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO3_POSTER" id="video3" autoplay muted loop>
+            <source src="github_video/easy_case/Axial-mm/Prostatectomy/正常_magxy_4_4_theta45_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Axial-VMM</h3>
+        </div>
+      </div>
+      <!-- Row 2: 4 Videos -->
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO4_POSTER" id="video4" autoplay muted loop>
+            <source src="github_video/easy_case/Multi_Domain_Learning/Prostatectomy/正常_x8_mag_D1_img.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">MDL-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO5_POSTER" id="video5" autoplay muted loop>
+            <source src="github_video/easy_case/motion_magnification/Prostatectomy/正常_x4_mag_static.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">DMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO6_POSTER" id="video6" autoplay muted loop>
+            <source src="github_video/easy_case/STB_VMM/Prostatectomy/正常_x4_x4_static_output.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">STB-VMM</h3>
+        </div>
+        <div class="column is-one-quarter has-text-centered video-container">
+          <video poster="PATH_TO_VIDEO7_POSTER" id="video7" autoplay muted loop>
+            <source src="github_video/easy_case/EVM/Prostatectomy/正常_x4_mag_EVM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EVM</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 针对特定部分的视频调整大小 */
+  .specific-video-container video {
+    width: 185px; /* 视频宽度占满列宽 */
+    height: 100px; /* 高度自动调整，保持比例 */
+    object-fit: cover;
+  }
+
+  /* 视频容器的间距 */
+  .specific-video-container {
+    padding: 5px; /* 每个视频容器周围添加间距 */
+  }
+
+  /* 调整标题大小 */
+  .specific-video-container h3 {
+    font-size: 0.9rem; /* 调整标题字体大小 */
+    margin-top: 5px; /* 标题与视频之间的间距 */
+    text-align: center; /* 标题居中 */
+  }
+
+  /* 场景标题样式 */
+  .scene-title {
+    grid-column: span 4; /* 每个标题跨越3列 */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* 使用CSS Grid布局 */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8列 */
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* 确保标题居中 */
+  .scene-title h4 {
+    text-align: center;
+  }
+</style>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- 添加标题 -->
+      <h1 class="title is-2 has-text-centered">Compare in Hard Cases</h1>
+      <!-- 添加小字描述 -->
+      <p class="subtitle is-5 has-text-centered">
+          Comparison of the amplification effects of different models on the Hard Case dataset
+      </p>
+      <div style="height: 10px;"></div> <!-- 添加一个空白的 div 来增加间距 -->   
+      
+      <!-- 第一行：Occlusion和Tool Disturbance -->
+      <div class="video-grid">
+        <div class="scene-title" style="grid-column: 1 / span 4;">
+          <h4 class="subtitle is-4">Occlusion</h4>
+        </div>
+        <div class="scene-title" style="grid-column: 5 / span 4;">
+          <h4 class="subtitle is-4">Tool Disturbance</h4>
+        </div>
+        
+        <!-- 六个视频 -->
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video0" autoplay muted loop>
+            <source src="github_video/original/chal/工具移动纱布遮挡.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>         
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video1" autoplay muted loop>
+            <source src="github_video/challeneg_finial/occlusion/endocontrolmag_distance/工具移动纱布遮挡_x4_update_4_track_math.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Distance)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO2_POSTER" id="video2" autoplay muted loop>
+            <source src="github_video/challeneg_finial/occlusion/endocontrolmag_flow/工具移动纱布遮挡_x4_update_4_track_flow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Motion)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO3_POSTER" id="video3" autoplay muted loop>
+            <source src="github_video/challeneg_finial/occlusion/flowmag/工具移动纱布遮挡_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video4" autoplay muted loop>
+            <source src="github_video/original/chal/工具操作.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>  
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO4_POSTER" id="video5" autoplay muted loop>
+            <source src="github_video/challeneg_finial/tool_disturbance/endocontrolmag_distance/工具操作_x4_update_4_track_math.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Distance)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO5_POSTER" id="video6" autoplay muted loop>
+            <source src="github_video/challeneg_finial/tool_disturbance/endocontrolmag_flow/工具操作_x4_update_4_track_flow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Motion)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO6_POSTER" id="video7" autoplay muted loop>
+            <source src="github_video/challeneg_finial/tool_disturbance/flowmag/工具操作_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+      </div>
+
+      <!-- 第二行：Vessel Deformation和View Change -->
+      <div class="video-grid">
+        <div class="scene-title" style="grid-column: 1 / span 4;">
+          <h4 class="subtitle is-4">Vessel Deformation</h4>
+        </div>
+        <div class="scene-title" style="grid-column: 5 / span 4;">
+          <h4 class="subtitle is-4">View Change</h4>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video8" autoplay muted loop>
+            <source src="github_video/original/chal/工具移动牵拉组织.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>  
+        <!-- 六个视频 -->
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO7_POSTER" id="video9" autoplay muted loop>
+            <source src="github_video/challeneg_finial/vessel_deformation/endocontrolmag_distance/工具移动牵拉组织_x4_update_4_track_math.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Distance)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO8_POSTER" id="video10" autoplay muted loop>
+            <source src="github_video/challeneg_finial/vessel_deformation/endocontrolmag_flow/工具移动牵拉组织_x4_update_4_track_flow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Motion)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO9_POSTER" id="video11" autoplay muted loop>
+            <source src="github_video/challeneg_finial/vessel_deformation/flowmag/工具移动牵拉组织_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video12" autoplay muted loop>
+            <source src="github_video/original/chal/血管消失后再现.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>  
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO10_POSTER" id="video13" autoplay muted loop>
+            <source src="github_video/challeneg_finial/view_change/endocontrolmag_distance/血管消失后再现_x4_update_4_track_math.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Distance)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO11_POSTER" id="video14" autoplay muted loop>
+            <source src="github_video/challeneg_finial/view_change/endocontrolmag_flow/血管消失后再现_x4_update_4_track_flow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">EndoControlMag(Motion)</h3>
+        </div>
+        <div class="specific-video-container">
+          <video poster="PATH_TO_VIDEO12_POSTER" id="video15" autoplay muted loop>
+            <source src="github_video/challeneg_finial/view_change/flowmag/血管消失后再现_x4_soft_25.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">FlowMag</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* 针对特定部分的视频调整大小 */
+  .specific-video-container-5 video {
+    width: 210px; /* 视频宽度占满列宽 */
+    height: 150px; /* 高度自动调整，保持比例 */
+    object-fit: cover;
+  }
+
+  /* 视频容器的间距 */
+  .specific-video-container-5 {
+    padding: 5px; /* 每个视频容器周围添加间距 */
+  }
+
+
+</style>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Compare in Different Magnification Factors</h2>
+      <!-- Row: 5 Videos -->
+      <div class="columns is-centered-5">
+        <div class="column is-one-sixth has-text-centered video-container specific-video-container-5">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video0" autoplay muted loop>
+            <source src="github_video/original/Cho_正常.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">Original</h3>
+        </div>
+        <div class="column is-one-sixth has-text-centered video-container specific-video-container-5">
+          <video poster="PATH_TO_VIDEO1_POSTER" id="video1" autoplay muted loop>
+            <source src="github_video/diff_mag/正常_x2_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">x2</h3>
+        </div>
+        <div class="column is-one-sixth has-text-centered video-container specific-video-container-5">
+          <video poster="PATH_TO_VIDEO2_POSTER" id="video2" autoplay muted loop>
+            <source src="github_video/diff_mag/正常_x4_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">x4</h3>
+        </div>
+        <div class="column is-one-sixth has-text-centered video-container specific-video-container-5">
+          <video poster="PATH_TO_VIDEO3_POSTER" id="video3" autoplay muted loop>
+            <source src="github_video/diff_mag/正常_x8_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">x8</h3>
+        </div>
+        <div class="column is-one-sixth has-text-centered video-container specific-video-container-5">
+          <video poster="PATH_TO_VIDEO4_POSTER" id="video4" autoplay muted loop>
+            <source src="github_video/diff_mag/正常_x16_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">x16</h3>
+        </div>
+        <div class="column is-one-sixth has-text-centered video-container specific-video-container-5">
+          <video poster="PATH_TO_VIDEO5_POSTER" id="video5" autoplay muted loop>
+            <source src="github_video/diff_mag/正常_x32_update_4_exp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3 class="subtitle">x32</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- End video section -->
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">EndoControlMag: Robust Endoscopic Vascular Motion Magnification with Adaptive Reference Frames and Dual-Mask Control Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
